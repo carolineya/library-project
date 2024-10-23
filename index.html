@@ -1,10 +1,55 @@
 <!DOCTYPE html>
-<html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="styles.css">
 
- <head>
-</head>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
 
- <body>
-</body>
-
-</html>
+        <body>
+            <h1>MY LIBRARY</h1>
+            <div id="books-newbook">
+                <div id="book-container">
+                </div>
+                <div id="new-book-container">
+                    <button id="show-dialog">ADD NEW BOOK</button>
+                </div>
+            </div>
+            <div id="bookshelf"></div>
+            <dialog id="dialog">
+                <form method="dialog">
+                    <p>
+                        <label>
+                            Book title:
+                            <input type="text" id="book-title" required />
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Book author:
+                            <input type="text" id="book-author" required />
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            Number of pages:
+                            <input type="text" id="book-pages" required />
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            I have read this:
+                            <input type="checkbox" id="book-read"/>
+                        </label>
+                    </p>
+                    <input type="submit" id="submit" value="Add Book" formnovalidate />
+                </form>
+            </dialog>
+            
+            <output></output>
+            <script src="script.js"></script>
+        </body>
+    </html>

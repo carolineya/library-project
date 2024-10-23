@@ -1,0 +1,97 @@
+body {
+    color: #141215;
+    font-family: "Goudy Bookletter 1911", serif;
+    background-color: #FAF0E6;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+h1 {
+    font-size: 52px;
+    text-align: center;
+}
+
+#books-newbook {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    height: 475px;
+}
+
+#book-container {
+    margin-left: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+#new-book-container {
+    border-radius: 7px;
+    padding: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #7a2e19;
+    width: 138px;
+    height: 391px;
+}
+
+#show-dialog {
+    font-family: "Goudy Bookletter 1911", serif;
+    font-size: 22px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 7px;
+    border: 3px solid #D4AF37;
+}
+
+#show-dialog:hover {
+    font-weight: 800;
+    background-color: #f7f4ef;
+}
+
+.book {
+    border-radius: 7px;
+    color: #D4AF37;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-left: 2px;
+    margin-right: 2px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+}
+
+#title-text {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#author-text {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+#page-text {
+    font-size: 18px;
+}
+
+.trash-btn {
+    width: 45px;
+    justify-self: center;
+}
+
+hr {
+    border-color: #D4AF37;
+    margin: 0;
+}
+
+#bookshelf {
+    background-image: url("wood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70px;
+    
+}
